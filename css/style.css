@@ -1,0 +1,21 @@
+/* No CSS */
+/*# sourceMappingURL=style.css.map */
+:root {
+    --primary: #206CFF;
+}
+
+.bg-primary {
+    background-color: var(--primary);
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.font-28 {
+    font-size: 28px;
+}
