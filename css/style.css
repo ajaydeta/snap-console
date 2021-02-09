@@ -1,21 +1,85 @@
 /* No CSS */
 /*# sourceMappingURL=style.css.map */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 :root {
     --primary: #206CFF;
-}
+    --secondary: #828282;
+    }
+
+    * {
+        font-family: 'Nunito',
+            sans-serif !important;
+    }
+
+    .ilustrasi {
+        width: 174px;
+        height: 147px;
+        top: 0px;
+
+        background: #80ABFF;
+        border-radius: 6px;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+
+        position: absolute;
+        width: 100%;
+        height: 210px;
+        left: 0px;
+        top: 56px;
+
+        background: #E5F6FF;
+    }
+
+    .card-setup {
+        display: flex;
+        flex-direction: column;
+        padding: 16px 0px;
+
+        width: 328px;
+        height: 688px;
+        left: 16px;
+        top: 16px;
+
+        background: #FFFFFF;
+        /* DropColor/Primary2 */
+
+        box-shadow: 0px 8px 20px rgba(33, 109, 255, 0.15);
+        border-radius: 16px;
+    }
 
 .bg-primary {
     background-color: var(--primary);
 }
 
+/*?text color */
 .text-primary {
-    color: var(--primary);
-}
+    color: var(--primary) !important;
+    }
 
+    .text-secondary {
+        color: var(--secondary) !important;
+    }
+
+    /* !font size */
 .font-20 {
     font-size: 20px;
 }
 
 .font-28 {
     font-size: 28px;
+}
+.font-16 {
+    font-size: 16px;
+}
+
+/* ?font family */
+.font-sans {
+    font-family: 'Nunito Sans',
+        sans-serif !important;
 }
