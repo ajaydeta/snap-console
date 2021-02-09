@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./splide/dist/js/splide.js"></script>
+    <link rel="stylesheet" href="./splide/dist/css/splide.min.css">
+    <link rel="stylesheet" href="./splide/dist/css/splide-core.min.css">
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- title bar -->
+    <div class="shadow-lg container p-4">
+        <span class="d-inline">
+            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 13L1 7L7 1" stroke="#333333" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </span>
+        <div class="m-3 d-inline">
+            Kembali
+        </div>
+    </div>
+    <!-- title -->
+    <div class="title">
+        <h3 class="font-28 font-sans">Buat SmartConsole Baru</h3>
+        <p class="font-20 font-sans">Pilih Jenis Console</p>
+    </div>
+    <div id="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">Slide 01</li>
+                <li class="splide__slide">Slide 02</li>
+                <li class="splide__slide">Slide 03</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        new Splide('#splide', {
+            start: 2,
+        }).mount();
+    </script>
+</body>
+
+</html>
