@@ -188,13 +188,23 @@
     background: #206cff;
 }
 
+.glass-card {
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(6px);
+    border-radius: 6px;
+}
+
+.footer-mulai-menggunakan {
+    height: 48px;
+
+    background: rgba(34, 34, 34, 0.5);
+    backdrop-filter: blur(4px);
+}
+
 .flex {
     display: flex;
     flex-direction: column;
 }
-
-
-
 /*?text color */
 h1 {
 color: var(--primary) !important;
@@ -226,6 +236,13 @@ h2 {
     color: var(--gray2);
     font-size: 20px;
 }
+.paragraf-2 {
+    font-size: 18px;
+    line-height: 145%;
+    text-align: center;
+    color: #4F4F4F;
+}
+
 .caption {
     font-size: 16px;
     color: #828282;
@@ -265,4 +282,8 @@ h2 {
 
 .bg-gray-4 {
     background-color: #bdbdbd;
+}
+.bg-image {
+    background-image: url('../bg-mulai.png');
+    background-size: cover;
 }
