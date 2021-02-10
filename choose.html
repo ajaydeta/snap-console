@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./splide/dist/js/splide.js"></script>
-    <link rel="stylesheet" href="./splide/dist/css/splide.min.css">
-    <link rel="stylesheet" href="./splide/dist/css/splide-core.min.css">
-    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.css">
+<script src="./splide/dist/js/splide.min.js"></script>
+<link rel="stylesheet" href="./splide/dist/css/splide-core.min.css">
+<link rel="stylesheet" href="./splide/dist/css/splide.min.css">
+<!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+</script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -34,17 +37,35 @@
     <div id="splide">
         <div class="splide__track">
             <ul class="splide__list">
-                <li class="splide__slide">Slide 01</li>
-                <li class="splide__slide">Slide 02</li>
-                <li class="splide__slide">Slide 03</li>
+                <li class="splide__slide">
+                    <div class="card-choose-slide">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias eligendi saepe maxime ratione
+                        animi hic adipisci eum at sapiente iusto reiciendis, nam, vero earum doloribus quisquam quia
+                        tempore enim iste.
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="card-choose-slide">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias eligendi saepe maxime ratione
+                        animi hic adipisci eum at sapiente iusto reiciendis, nam, vero earum doloribus quisquam quia
+                        tempore enim iste.
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="card-choose-slide">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias eligendi saepe maxime ratione
+                        animi hic adipisci eum at sapiente iusto reiciendis, nam, vero earum doloribus quisquam quia
+                        tempore enim iste.
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
 
     <script>
-        new Splide('#splide', {
-            start: 2,
-        }).mount();
+        document.addEventListener( 'DOMContentLoaded', function () {
+        new Splide( '.splide' ).mount();
+        } );
     </script>
 </body>
 
