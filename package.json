@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ajaydeta/snap-console/issues"
   },
-  "homepage": "https://github.com/ajaydeta/snap-console#readme"
+  "homepage": "https://github.com/ajaydeta/snap-console#readme",
+  "dependencies": {
+    "@splidejs/splide": "^2.4.21"
+  }
 }

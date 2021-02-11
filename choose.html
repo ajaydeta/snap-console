@@ -6,14 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document tes</title>
-<script src="./splide/dist/js/splide.min.js"></script>
-<link rel="stylesheet" href="./splide/dist/css/splide-core.min.css">
-<link rel="stylesheet" href="./splide/dist/css/splide.min.css">
-<!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
-</script>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./asset/bootstrap/dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./asset/bootstrap/dist/css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+
+    <script src="./asset/bootstrap/dist/js/bootstrap.js"></script>
 </head>
 
 <body>
@@ -30,42 +27,35 @@
         </div>
     </div>
     <!-- title -->
-    <div class="title">
-        <h3 class="font-28 font-sans">Buat SmartConsole Baru</h3>
-        <p class="font-20 font-sans">Pilih Jenis Console</p>
+    <div class="title-choose">
+        <h1 class="text-gray-1 mb-3">Buat SmartConsole Baru</h1>
+        <p class="paragraf-1 text-gray-1">Pilih Jenis Console</p>
     </div>
-    <div id="splide">
-        <div class="splide__track">
-            <ul class="splide__list">
-                <li class="splide__slide">
-                    <div class="card-choose-slide">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias eligendi saepe maxime ratione
-                        animi hic adipisci eum at sapiente iusto reiciendis, nam, vero earum doloribus quisquam quia
-                        tempore enim iste.
-                    </div>
-                </li>
-                <li class="splide__slide">
-                    <div class="card-choose-slide">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias eligendi saepe maxime ratione
-                        animi hic adipisci eum at sapiente iusto reiciendis, nam, vero earum doloribus quisquam quia
-                        tempore enim iste.
-                    </div>
-                </li>
-                <li class="splide__slide">
-                    <div class="card-choose-slide">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias eligendi saepe maxime ratione
-                        animi hic adipisci eum at sapiente iusto reiciendis, nam, vero earum doloribus quisquam quia
-                        tempore enim iste.
-                    </div>
-                </li>
-            </ul>
+    <div class="splide">
+    </div>
+    <div class="card-choose-slide mx-auto">
+        <div class="d-flex align-items-end">
+            <div class="text-center">
+                <h1>Per Device</h1>
+                <p class="paragraf-1 mt-3">
+                    Tiap mesin memiliki SmartConsole
+                </p>
+                <a class="btn-choose-card text-button text-white my-auto ms-auto">
+                    Gunakan Jenis Ini
+                    <span class="ms-2">
+                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 13L7 7L0.999999 1" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
         </div>
     </div>
 
     <script>
-        document.addEventListener( 'DOMContentLoaded', function () {
+        import Splide from '@splidejs/splide';
         new Splide( '.splide' ).mount();
-        } );
     </script>
 </body>
 
