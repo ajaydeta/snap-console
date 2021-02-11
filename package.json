@@ -1,0 +1,19 @@
+{
+  "name": "snapconsole",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajaydeta/snap-console.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajaydeta/snap-console/issues"
+  },
+  "homepage": "https://github.com/ajaydeta/snap-console#readme"
+}
