@@ -12,6 +12,7 @@
     --gray3: #828282;
     --yellow:#FFB320;
     --gray-5 :#f4f4f4;
+    --red:#EB5757;
 }
 
 * {
@@ -261,12 +262,16 @@
     border-radius: 42px;
 }
 
-.gif-mesin-cuci {
+.lottie-mesin-cuci {
     position: absolute;
     width: 225.21px;
     height: 224px;
     top: 207px;
     overflow: hidden;
+}
+.lottie-gagal {
+    width: 216px;
+    height: 216px;
 }
 /*?text color */
 h1 {
@@ -337,6 +342,10 @@ h2 {
 
 .text-yellow {
     color: var(--yellow);
+}
+
+.text-red {
+    color: var(--red) !important;
 }
 
 .fixed-bottom {
