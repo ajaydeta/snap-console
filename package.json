@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ajaydeta/snap-console#readme",
   "dependencies": {
-    "@splidejs/splide": "^2.4.21"
+    "@splidejs/splide": "^2.4.21",
+    "jquery": "^3.5.1"
   }
 }
