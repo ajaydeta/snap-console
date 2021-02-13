@@ -169,6 +169,18 @@
     border-radius: 8px;
 }
 
+.card-waktu-selesai {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: var(--white);
+    position: static;
+    width: 80%;
+    height: 83px;
+}
+
 .setup-qr-tips {
     padding: 16px 0;
     position: static;
@@ -274,6 +286,11 @@
     height: 216px;
 }
 /*?text color */
+.text-lg {
+    color: var(--primary) !important;
+    font-size: 48px !important;
+}
+
 h1 {
     color: var(--primary) !important;
     font-size: 28px;
