@@ -146,8 +146,6 @@
 .card-choose-slide {
     display: flex;
     padding: 16px 0px;
-
-    position: absolute;
     width: 296px;
     height: 475px;
     left: 32px;
