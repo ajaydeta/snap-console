@@ -12,7 +12,7 @@
 
     <script src="./node_modules/@splidejs/splide/dist/js/splide.js" type="module"></script>
     <link rel="stylesheet" href="./node_modules/@splidejs/splide/dist/css/splide-core.min.css">
-    <link rel="stylesheet" href="./node_modules/@splidejs/splide/dist/css/splide.min.css">
+    <link rel="stylesheet" href="./node_modules/@splidejs/splide/dist/css/themes/splide-skyblue.min.css">
     <script src="./asset/bootstrap/dist/js/bootstrap.js"></script>
 </head>
 
@@ -109,7 +109,9 @@
 
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
-            new Splide('.splide').mount();
+            new Splide('.splide',{
+            arrows : false
+            }).mount();
         });
     </script>
 </body>
