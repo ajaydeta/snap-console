@@ -10,6 +10,8 @@
     --gray1: #333333;
     --gray2: #4f4f4f;
     --gray3: #828282;
+    --yellow:#FFB320;
+    --gray-5 :#f4f4f4;
 }
 
 * {
@@ -70,7 +72,7 @@
 }
 
 .bg-primary {
-    background-color: var(--primary);
+    background-color: var(--primary) !important;
 }
 
 .text-center {
@@ -224,10 +226,9 @@
     /* DropColor/Accent */
 
     box-shadow: 0px 4px 10px rgba(238, 154, 28, 0.2);
-}
+}               
 
 .card {
-    width: 241px;
     background: #FFFFFF;
     box-shadow: 0px 8px 20px rgba(33, 109, 255, 0.15);
     border-radius: 8px;
@@ -334,6 +335,10 @@ h2 {
     color: var(--gray3);
 }
 
+.text-yellow {
+    color: var(--yellow);
+}
+
 .fixed-bottom {
     position: fixed;
     right: 0;
@@ -345,7 +350,13 @@ h2 {
 .bg-gray-4 {
     background-color: #bdbdbd;
 }
+.bg-gray-5 {
+    background-color: var(--gray-5);
+}
 .bg-image-mulai {
     background-image: url('../img/bg-mulai.png');
     background-size: cover;
+}
+.w-full {
+    width: 80% !important;
 }
