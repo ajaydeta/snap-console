@@ -258,7 +258,14 @@
 
     box-shadow: 0px 4px 10px rgba(32, 108, 255, 0.2);
     border-radius: 42px;
+}
 
+.gif-mesin-cuci {
+    position: absolute;
+    width: 225.21px;
+    height: 224px;
+    top: 207px;
+    overflow: hidden;
 }
 /*?text color */
 h1 {
