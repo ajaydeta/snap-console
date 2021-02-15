@@ -66,7 +66,7 @@
     height: 224px;
     left: 52px;
     top: 0px;
-    background: linear-gradient(180deg, #206cff 0%, #0f54da 100%);
+    background: var(--white);
 
     border-radius: 100%;
     box-shadow: 5px 5px 20px #929292;
@@ -384,3 +384,47 @@ h2 {
 .w-full {
     width: 80% !important;
 }
+/*? animasi */
+.border-biru {
+    display: flex;
+    align-items: center;
+    height: 126px;
+    width: 88px;
+    border: 4px solid #206CFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.huruf-c {
+    font-size: 50px;
+    color: var(--primary);
+    animation: huruf-c 1s infinite;
+}
+
+@keyframes huruf-c {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+/* ! SAND BOX */
+.sret-kuning {
+    background-color: #fbbf4a;
+    background-position: bottom;
+    height: 20px;
+    width: 30px;
+    z-index: -2;
+    position: relative;
+    display: inline-block;
+}
+
+@keyframes sret {}
