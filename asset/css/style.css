@@ -10,9 +10,10 @@
     --gray1: #333333;
     --gray2: #4f4f4f;
     --gray3: #828282;
-    --yellow:#FFB320;
-    --gray-5 :#f4f4f4;
-    --red:#EB5757;
+    --gray4: #BDBDBD;
+    --yellow: #FFB320;
+    --gray-5: #f4f4f4;
+    --red: #EB5757;
 }
 
 * {
@@ -101,26 +102,26 @@
     background: var(--primary);
     border-radius: 4px;
     text-decoration: none;
-    }
+}
 
-    .btn-choose-card {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0px 16px;
-        margin-top: 24px !important;
+.btn-choose-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+    margin-top: 24px !important;
 
-        position: static;
-        width: 65%;
-        height: 56px;
+    position: static;
+    width: 65%;
+    height: 56px;
 
-        /* Primary/1 */
-        color: var(--white);
-        background: var(--primary);
-        text-decoration: none;
+    /* Primary/1 */
+    color: var(--white);
+    background: var(--primary);
+    text-decoration: none;
 
-        border-radius: 8px 0 0 8px;
-    }
+    border-radius: 8px 0 0 8px;
+}
 
 .btn-outline-primary {
     display: flex;
@@ -141,6 +142,32 @@
     border: 3px solid var(--primary);
     border-radius: 4px;
     text-decoration: none;
+}
+
+.btn-selesai-setup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    position: static;
+    width: 132px;
+    height: 56px;
+    background-color: var(--gray4);
+    border-radius: 8px 0 0 8px;
+}
+
+.btn-kembali-setup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--gray2);
+    position: static;
+    width: 132px;
+    height: 56px;
+    background-color: var(--white);
+    border-radius: 0 8px 8px 0;
 }
 
 .card-choose-slide {
@@ -237,7 +264,7 @@
     /* DropColor/Accent */
 
     box-shadow: 0px 4px 10px rgba(238, 154, 28, 0.2);
-}               
+}
 
 .card {
     background: #FFFFFF;
