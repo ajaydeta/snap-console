@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document tes</title>
+    <link rel="stylesheet" href="../asset/bootstrap/dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../asset/bootstrap/dist/css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="../asset/css/style.css">
+
+    <script src="../node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="../node_modules/@splidejs/splide/dist/css/splide-core.min.css">
+    <link rel="stylesheet" href="../node_modules/@splidejs/splide/dist/css/themes/splide-skyblue.min.css">
+
+    <script src="../asset/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- title bar -->
+    <div class="shadow-lg container p-4">
+        <span class="d-inline">
+            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 13L1 7L7 1" stroke="#333333" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </span>
+        <div class="m-3 d-inline">
+            Kembali
+        </div>
+    </div>
+    <!-- title -->
+    <div class="title-choose container" style="height: 256px;">
+        <div class="pill-tahap">
+            <div class="m-1 text-center text-gray-2 sub-head-2">
+                Tahap <span class="text-primary">2</span> dari 4
+            </div>
+        </div>
+        <h2 class="text-gray-1 mt-4">Pilih layanan yang sesuai <br> kebutuhanmu</h2>
+    </div>
+    <div class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <div class="card-mulai-tahap2">
+                        <div>
+                            <div class="p-3">
+                                <div class="lingkaran-nomer">1</div>
+                                <h1 class="text-gray-1">Cuci Baju Bersih </h1>
+                            </div>
+                            <div class="d-flex">
+                                <div class="ribbon text-white">
+                                    <img src="../asset/img/shopping-bag-white.svg" style="height: 20px;">
+                                    7 Kilogram
+                                </div>
+                                <img src="../asset/img/ribbon.svg">
+                            </div>
+                        </div>
+                        <div class="footer-card-mulai">
+                            <p class="paragraf-2">Harga</p>
+                            <div class="d-flex align-items-center">
+                                <h1>Rp 25.000</h1>
+                                <div class="lingkaran-tombol">
+                                    <img src="../asset/img/arrow-full-r.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="card-mulai-tahap2">
+                        <div>
+                            <div class="p-3">
+                                <div class="lingkaran-nomer">2</div>
+                                <h1 class="text-gray-1">Paling Mantap </h1>
+                            </div>
+                            <div class="d-flex">
+                                <div class="ribbon text-white">
+                                    <img src="../asset/img/shopping-bag-white.svg" style="height: 20px;">
+                                    10 Kilogram
+                                </div>
+                                <img src="../asset/img/ribbon.svg">
+                            </div>
+                        </div>
+                        <div class="footer-card-mulai">
+                            <p class="paragraf-2">Harga</p>
+                            <div class="d-flex align-items-center">
+                                <h1>Rp 27.000</h1>
+                                <div class="lingkaran-tombol">
+                                    <img src="../asset/img/arrow-full-r.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="card-mulai-tahap2">
+                        <div>
+                            <div class="p-3">
+                                <div class="lingkaran-nomer">3</div>
+                                <h1 class="text-gray-1">Paling Mantap </h1>
+                            </div>
+                            <div class="d-flex">
+                                <div class="ribbon text-white">
+                                    <img src="../asset/img/shopping-bag-white.svg" style="height: 20px;">
+                                    12 Kilogram
+                                </div>
+                                <img src="../asset/img/ribbon.svg">
+                            </div>
+                        </div>
+                        <div class="footer-card-mulai">
+                            <p class="paragraf-2">Harga</p>
+                            <div class="d-flex align-items-center">
+                                <h1>Rp 30.000</h1>
+                                <div class="lingkaran-tombol">
+                                    <img src="../asset/img/arrow-full-r.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('.splide', {
+                arrows: false
+            }).mount();
+        });
+    </script>
+</body>
+
+</html>

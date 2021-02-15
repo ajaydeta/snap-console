@@ -245,6 +245,64 @@
     border-radius: 6px;
 }
 
+.card-mulai-tahap2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    position: relative;
+    width: 256px;
+    height: 352px;
+
+    /* Linear/Card */
+
+    background: linear-gradient(136.06deg, #FFFFFF 50.7%, #C8E8FE 83.86%);
+    /* DropColor/Primary */
+
+    box-shadow: 0px 4px 10px rgba(32, 108, 255, 0.2);
+    border-radius: 8px;
+}
+
+.lingkaran-nomer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E1F3FF;
+    padding: 10px;
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    overflow: hidden;
+}
+
+.lingkaran-tombol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    margin-left: 33px;
+    background: rgba(255, 255, 255, 0.6);
+    /* DropColor/Primary2 */
+
+    box-shadow: 0px 8px 20px rgba(33, 109, 255, 0.15);
+
+}
+
+.footer-card-mulai {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 17px 16px 16px;
+
+    position: static;
+    width: 256px;
+
+    background: rgba(255, 255, 255, 0.5);
+}
+
 .footer-mulai-menggunakan {
     height: 48px;
 
