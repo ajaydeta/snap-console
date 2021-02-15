@@ -172,11 +172,11 @@
 
 .card-choose-slide {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 16px 0px;
     width: 296px;
     height: 475px;
-    left: 32px;
-    top: 179px;
 
     background: #FFFFFF;
     box-shadow: 0px 8px 20px rgba(33, 109, 255, 0.15);
@@ -513,3 +513,179 @@ h2 {
 }
 
 @keyframes sret {}
+.wrapper-animasi {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 200px;
+
+}
+
+.bunder {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    display: block;
+    background-color: var(--primary);
+    position: absolute;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+.bunder:nth-child(1) {
+    right: 50%;
+    opacity: 0;
+    animation-name: maksret-kiri;
+}
+
+.bunder:nth-child(2) {
+    left: 50%;
+    opacity: 0;
+    animation-name: maksret-kanan;
+}
+
+@keyframes maksret-kanan {
+    0% {
+        left: 100%;
+    }
+
+    25% {
+        opacity: 100%;
+        transform: scale(1, 1);
+    }
+
+    50% {
+        opacity: 100%;
+        transform: scale(1, 1);
+    }
+
+    75% {
+        opacity: 100%;
+        transform: scale(1, 1);
+    }
+
+    100% {
+        left: 50%;
+        opacity: 0;
+        transform: scale(2.2, 3.15);
+    }
+
+}
+
+@keyframes maksret-kiri {
+    0% {
+        right: 100%;
+    }
+
+    25% {
+        opacity: 100%;
+        transform: scale(1, 1);
+    }
+
+    50% {
+        opacity: 100%;
+        transform: scale(1, 1);
+    }
+
+    75% {
+        opacity: 100%;
+        transform: scale(1, 1);
+    }
+
+    100% {
+        right: 50%;
+        opacity: 0;
+        transform: scale(2.2, 3.15);
+    }
+}
+
+
+.kotak {
+    height: 126px;
+    width: 88px;
+    border: 4px solid var(--primary);
+    box-sizing: border-box;
+    border-radius: 8px;
+    animation: scale-box 1s infinite;
+    opacity: 0;
+}
+
+@keyframes scale-box {
+    0% {
+        height: 1px;
+        width: 1px;
+        opacity: 0;
+    }
+
+    65% {
+        height: 1px;
+        width: 1px;
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(88px, 126px);
+        opacity: 100%;
+    }
+}
+
+
+
+.kotak-slide2 {
+    height: 126px;
+    width: 88px;
+    border: 4px solid var(--primary);
+    box-sizing: border-box;
+    border-radius: 8px;
+    animation: kotak-slide2 5s infinite;
+    /* opacity: 0; */
+    position: relative;
+}
+
+.bunder-slide2 {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    position: absolute;
+    left: 45%;
+    background-color: var(--primary);
+
+}
+
+@keyframes kotak-slide2 {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 10;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+.awan-mlaku {
+    position: absolute;
+    z-index: -1;
+    animation: awan-mlaku 10s infinite;
+}
+
+@keyframes awan-mlaku {
+    0% {
+        right: 100%
+    }
+
+    100% {
+        right: -100%
+    }
+}
