@@ -1,20 +1,11 @@
-/* No CSS */
-/*# sourceMappingURL=style.css.map */
+/* font */
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
-:root {
-    --primary: #206cff;
-    --secondary: #828282;
-    --white: #fff;
-    --gray1: #333333;
-    --gray2: #4f4f4f;
-    --gray3: #828282;
-    --gray4: #BDBDBD;
-    --yellow: #FFB320;
-    --gray-5: #f4f4f4;
-    --red: #EB5757;
-}
+/* utilitas */
+@import url("./main-var.css");
+@import url("./typografi.css");
+@import url("./animasi.css");
 
 * {
     font-family: "Nunito",
@@ -22,6 +13,14 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+}
+
+lottie-player {
+    overflow: hidden;
+}
+
+.splide {
+    margin-top: -120px;
 }
 
 .ilustrasi {
@@ -39,10 +38,6 @@
     align-items: flex-start;
     z-index: -2;
     overflow: hidden;
-    padding: 16px;
-    height: 210px;
-    background-image: url(../img/bg.png);
-    background-size: cover;
 }
 
 .card-setup {
@@ -77,6 +72,10 @@
 
 .bg-primary {
     background-color: var(--primary) !important;
+}
+
+.bg-gray-4 {
+    background-color: var(--gray4) !important;
 }
 
 .text-center {
@@ -370,86 +369,6 @@
     width: 216px;
     height: 216px;
 }
-/*?text color */
-.text-lg {
-    color: var(--primary) !important;
-    font-size: 48px !important;
-}
-
-h1 {
-    color: var(--primary) !important;
-    font-size: 28px;
-}
-
-h2 {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 140%;
-    color: var(--gray2);
-}
-
-.sub-head-1 {
-    font-weight: 600;
-    font-size: 16px;
-    color: #828282;
-    line-height: 140%;
-}
-
-.sub-head-2 {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 140%;
-    color: #6398FF;
-}
-
-.paragraf-1 {
-    color: var(--gray2);
-    font-size: 20px;
-}
-.paragraf-2 {
-    font-size: 18px;
-    line-height: 145%;
-    color: #4F4F4F;
-}
-
-.caption {
-    font-size: 16px;
-    color: #828282;
-}
-
-.text-button {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
-
-    color: #4F4F4F;
-
-}
-
-.text-secondary {
-    color: var(--secondary) !important;
-}
-
-.text-gray-1 {
-    color: var(--gray1) !important;
-}
-
-.text-gray-2 {
-    color: var(--gray2);
-}
-
-.text-gray-3 {
-    color: var(--gray3);
-}
-
-.text-yellow {
-    color: var(--yellow);
-}
-
-.text-red {
-    color: var(--red) !important;
-}
-
 .fixed-bottom {
     position: fixed;
     right: 0;
@@ -457,257 +376,10 @@ h2 {
     left: 0;
     z-index: 1030;
 }
-
-.bg-gray-4 {
-    background-color: #bdbdbd;
-}
-.bg-gray-5 {
-    background-color: var(--gray-5);
-}
 .bg-image-mulai {
     background-image: url('../img/bg-mulai.png');
     background-size: cover;
 }
 .w-full {
     width: 80% !important;
-}
-/*? animasi */
-.border-biru {
-    display: flex;
-    align-items: center;
-    height: 126px;
-    width: 88px;
-    border: 4px solid #206CFF;
-    box-sizing: border-box;
-    border-radius: 10px;
-}
-
-.huruf-c {
-    font-size: 50px;
-    color: var(--primary);
-    animation: huruf-c 1s infinite;
-}
-
-@keyframes huruf-c {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    50% {
-        transform: rotate(-30deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
-}
-
-
-.box-border-slide2 {
-    height: 126px;
-    width: 88px;
-    background-color: transparent;
-    border: 4px solid var(--primary);
-    box-sizing: border-box;
-    left: 40%;
-    border-radius: 8px;
-    animation: box-border-slide2 3s infinite;
-    position: absolute;
-}
-
-.lingkaran-animasi-slide2 {
-    width: 8px;
-    height: 8px;
-    left: 47%;
-    border-radius: 100%;
-    position: absolute;
-    background-color: var(--primary);
-    animation: lingkaran-animasi-slide2 3s infinite;
-}
-
-@keyframes box-border-slide2 {
-    0% {
-        opacity: 0;
-    }
-
-    60% {
-        opacity: 100;
-    }
-
-    100% {
-        opacity: 100;
-    }
-}
-
-@keyframes lingkaran-animasi-slide2 {
-    0% {
-        top: 140px;
-        /* opacity: 0; */
-        left: 51%;
-    }
-
-    40% {
-        height: 40px;
-        width: 40px;
-        top: 140px;
-        left: 47%;
-    }
-
-    100% {
-        width: 8px;
-        height: 8px;
-        top: 200px;
-        left: 51%;
-    }
-}
-
-/* ! SAND BOX */
-.sret-kuning {
-    background-color: #fbbf4a;
-    background-position: bottom;
-    height: 20px;
-    width: 30px;
-    z-index: -2;
-    position: relative;
-    display: inline-block;
-}
-
-@keyframes sret {}
-.wrapper-animasi {
-    margin-top: auto;
-    margin-bottom: auto;
-    height: 200px;
-
-}
-
-.bunder {
-    height: 40px;
-    width: 40px;
-    border-radius: 100%;
-    display: block;
-    background-color: var(--primary);
-    position: absolute;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
-}
-
-.bunder:nth-child(1) {
-    right: 50%;
-    opacity: 0;
-    animation-name: maksret-kiri;
-}
-
-.bunder:nth-child(2) {
-    left: 50%;
-    opacity: 0;
-    animation-name: maksret-kanan;
-}
-
-@keyframes maksret-kanan {
-    0% {
-        left: 100%;
-    }
-
-    25% {
-        opacity: 100%;
-        transform: scale(1, 1);
-    }
-
-    50% {
-        opacity: 100%;
-        transform: scale(1, 1);
-    }
-
-    75% {
-        opacity: 100%;
-        transform: scale(1, 1);
-    }
-
-    100% {
-        left: 50%;
-        opacity: 0;
-        transform: scale(2.2, 3.15);
-    }
-
-}
-
-@keyframes maksret-kiri {
-    0% {
-        right: 100%;
-    }
-
-    25% {
-        opacity: 100%;
-        transform: scale(1, 1);
-    }
-
-    50% {
-        opacity: 100%;
-        transform: scale(1, 1);
-    }
-
-    75% {
-        opacity: 100%;
-        transform: scale(1, 1);
-    }
-
-    100% {
-        right: 50%;
-        opacity: 0;
-        transform: scale(2.2, 3.15);
-    }
-}
-
-
-.kotak {
-    height: 126px;
-    width: 88px;
-    border: 4px solid var(--primary);
-    box-sizing: border-box;
-    border-radius: 8px;
-    animation: scale-box 1s infinite;
-    opacity: 0;
-}
-
-@keyframes scale-box {
-    0% {
-        height: 1px;
-        width: 1px;
-        opacity: 0;
-    }
-
-    65% {
-        height: 1px;
-        width: 1px;
-        opacity: 0;
-    }
-
-    100% {
-        transform: scale(88px, 126px);
-        opacity: 100%;
-    }
-}
-
-
-.awan-mlaku {
-    position: relative;
-    overflow: hidden;
-    /* z-index: -1; */
-    animation: awan-mlaku 10s infinite;
-}
-
-@keyframes awan-mlaku {
-    0% {
-        right: 80%
-        }
-
-        80% {
-            opacity: 90%;
-    }
-
-    100% {
-        right: -100%;
-        opacity: 0
-    }
 }

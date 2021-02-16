@@ -1,0 +1,154 @@
+@import url("./keyframe.css");
+
+.border-biru {
+    display: flex;
+    align-items: center;
+    height: 126px;
+    width: 88px;
+    border: 4px solid #206CFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.huruf-c {
+    font-size: 50px;
+    color: var(--primary);
+    animation: huruf-c 1s infinite;
+}
+
+.awan-bg {
+    position: relative;
+    overflow: hidden;
+    /* z-index: -1; */
+    animation: awan-bg 5s infinite ease-in;
+}
+
+.box-border-slide2 {
+    height: 126px;
+    width: 88px;
+    background-color: transparent;
+    border: 4px solid var(--primary);
+    box-sizing: border-box;
+    left: 40%;
+    border-radius: 8px;
+    animation: box-border-slide2 3s infinite;
+    position: absolute;
+}
+
+.lingkaran-animasi-slide2 {
+    width: 8px;
+    height: 8px;
+    left: 47%;
+    border-radius: 100%;
+    position: absolute;
+    background-color: var(--primary);
+    animation: lingkaran-animasi-slide2 3s infinite;
+}
+
+/* ! SAND BOX */
+.sret-kuning {
+    background-color: #fbbf4a;
+    background-position: bottom;
+    height: 20px;
+    width: 30px;
+    z-index: -2;
+    position: relative;
+    display: inline-block;
+}
+
+@keyframes sret {}
+
+.wrapper-animasi {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 200px;
+
+}
+
+.bunder {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    display: block;
+    background-color: var(--primary);
+    position: absolute;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+.bunder:nth-child(1) {
+    right: 50%;
+    opacity: 0;
+    animation-name: maksret-kiri;
+}
+
+.bunder:nth-child(2) {
+    left: 50%;
+    opacity: 0;
+    animation-name: maksret-kanan;
+}
+
+.kotak {
+    height: 126px;
+    width: 88px;
+    border: 4px solid var(--primary);
+    box-sizing: border-box;
+    border-radius: 8px;
+    animation: scale-box 1s infinite;
+    opacity: 0;
+}
+
+.shape {
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+    background-color: var(--primary);
+    position: absolute;
+}
+
+:root {
+    --top: 110px;
+    --left: 259px;
+    --durasi: 4s;
+}
+
+.shape:nth-child(1) {
+    top: var(--top);
+    left: calc(var(--left) - 154px);
+    width: 159px;
+    height: 5px;
+    border-radius: 0;
+    animation: shape-1 var(--durasi) infinite;
+}
+
+.shape:nth-child(2) {
+    top: calc(var(--top) + 3px);
+    left: var(--left);
+    width: 5px;
+    height: 101px;
+    border-radius: 0;
+}
+
+.shape:nth-child(3) {
+    top: calc(var(--top) + 103px);
+    left: calc(var(--left) - 154px);
+    width: 159px;
+    height: 5px;
+    border-radius: 0;
+}
+
+.shape:nth-child(4) {
+    top: calc(var(--top) + 3px);
+    left: calc(var(--left) - 154px);
+    width: 5px;
+    height: 101px;
+    border-radius: 0;
+    animation: shape-4 var(--durasi) infinite;
+}
+
+.shape:nth-child(5) {
+    left: 181px;
+    top: 191px;
+    animation: shape-5 var(--durasi) infinite;
+}
