@@ -37,6 +37,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    z-index: -2;
+    overflow: hidden;
     padding: 16px;
     height: 210px;
     background-image: url(../img/bg.png);
@@ -501,6 +503,64 @@ h2 {
 }
 
 
+.box-border-slide2 {
+    height: 126px;
+    width: 88px;
+    background-color: transparent;
+    border: 4px solid var(--primary);
+    box-sizing: border-box;
+    left: 40%;
+    border-radius: 8px;
+    animation: box-border-slide2 3s infinite;
+    position: absolute;
+}
+
+.lingkaran-animasi-slide2 {
+    width: 8px;
+    height: 8px;
+    left: 47%;
+    border-radius: 100%;
+    position: absolute;
+    background-color: var(--primary);
+    animation: lingkaran-animasi-slide2 3s infinite;
+}
+
+@keyframes box-border-slide2 {
+    0% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 100;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes lingkaran-animasi-slide2 {
+    0% {
+        top: 140px;
+        /* opacity: 0; */
+        left: 51%;
+    }
+
+    40% {
+        height: 40px;
+        width: 40px;
+        top: 140px;
+        left: 47%;
+    }
+
+    100% {
+        width: 8px;
+        height: 8px;
+        top: 200px;
+        left: 51%;
+    }
+}
+
 /* ! SAND BOX */
 .sret-kuning {
     background-color: #fbbf4a;
@@ -630,62 +690,24 @@ h2 {
 }
 
 
-
-.kotak-slide2 {
-    height: 126px;
-    width: 88px;
-    border: 4px solid var(--primary);
-    box-sizing: border-box;
-    border-radius: 8px;
-    animation: kotak-slide2 5s infinite;
-    /* opacity: 0; */
-    position: relative;
-}
-
-.bunder-slide2 {
-    height: 40px;
-    width: 40px;
-    border-radius: 100%;
-    position: absolute;
-    left: 45%;
-    background-color: var(--primary);
-
-}
-
-@keyframes kotak-slide2 {
-    0% {
-        opacity: 0;
-    }
-
-    30% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 0;
-    }
-
-    70% {
-        opacity: 10;
-    }
-
-    100% {
-        opacity: 100;
-    }
-}
-
 .awan-mlaku {
-    position: absolute;
-    z-index: -1;
+    position: relative;
+    overflow: hidden;
+    /* z-index: -1; */
     animation: awan-mlaku 10s infinite;
 }
 
 @keyframes awan-mlaku {
     0% {
-        right: 100%
+        right: 80%
+        }
+
+        80% {
+            opacity: 90%;
     }
 
     100% {
-        right: -100%
+        right: -100%;
+        opacity: 0
     }
 }

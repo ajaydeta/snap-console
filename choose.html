@@ -30,13 +30,13 @@
         </div>
     </div>
     <!-- title -->
-    <div class="title-choose" style="z-index: -2;">
+    <div class="title-choose">
         <div style="z-index: 1;">
             <h1 class="text-gray-1 mb-3">Buat SmartConsole Baru</h1>
             <p class="paragraf-1 text-gray-1">Pilih Jenis Console</p>
         </div>
-        <img src="./asset/img/awan.svg" class="awan-mlaku">
-        </div>
+        <img src="./asset/img/awan.svg" class="awan-mlaku overflow-hidden">
+    </div>
     <div class="splide">
         <div class="splide__track">
             <ul class="splide__list">
@@ -48,19 +48,13 @@
                             <span class="kotak mx-auto"></span>
                         </div>
                         <div class="text-center">
-                            <h1>Per Device</h1>
+                            <h1>Per Stack</h1>
                             <p class="paragraf-1 mt-3">
                                 Tiap mesin memiliki SmartConsole
                             </p>
                             <a class="btn-choose-card text-button text-white my-auto ms-auto">
                                 Gunakan Jenis Ini
-                                <span class="ms-2">
-                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 13L7 7L0.999999 1" stroke="white" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </span>
+                                <img src="./asset/img/arrow-r.svg" class="ms-3">
                             </a>
                         </div>
                     </div>
@@ -68,9 +62,8 @@
                 <li class="splide__slide">
                     <div class="card-choose-slide mx-auto">
                         <div class="wrapper-animasi d-flex align-items-center">
-                            <span class="bunder-slide2 mx-auto">
-                            </span>
-                            <span class="kotak-slide2 mx-auto"></span>
+                            <span class="lingkaran-animasi-slide2 mx-auto"></span>
+                            <span class="box-border-slide2 mx-auto"></span>
                         </div>
                         <div class="d-flex align-items-end">
                             <div class="text-center">
@@ -80,13 +73,7 @@
                                 </p>
                                 <a class="btn-choose-card text-button text-white my-auto ms-auto">
                                     Gunakan Jenis Ini
-                                    <span class="ms-2">
-                                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 13L7 7L0.999999 1" stroke="white" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </span>
+                                    <img src="./asset/img/arrow-r.svg" class="ms-3">
                                 </a>
                             </div>
                         </div>
@@ -94,21 +81,20 @@
                 </li>
                 <li class="splide__slide">
                     <div class="card-choose-slide mx-auto">
+                    <div class="wrapper-animasi d-flex align-items-center">
+                        <span class="bunder"></span>
+                        <span class="bunder"></span>
+                        <span class="kotak mx-auto"></span>
+                    </div>
                         <div class="d-flex align-items-end">
                             <div class="text-center">
-                                <h1>Per Device</h1>
+                                <h1>Per Group</h1>
                                 <p class="paragraf-1 mt-3">
                                     Tiap mesin memiliki SmartConsole
                                 </p>
-                                <a class="btn-choose-card text-button text-white my-auto ms-auto">
-                                    Gunakan Jenis Ini
-                                    <span class="ms-2">
-                                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 13L7 7L0.999999 1" stroke="white" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </span>
+                                <a class="btn-choose-card bg-gray-4 text-button text-white my-auto ms-auto">
+                                    Hanya Untuk Tablet
+                                    <img src="./asset/img/arrow-r.svg" class="ms-3">
                                 </a>
                             </div>
                         </div>
@@ -121,7 +107,7 @@
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
             new Splide('.splide', {
-            arrows: false
+                arrows: false
             }).mount();
         });
     </script>
