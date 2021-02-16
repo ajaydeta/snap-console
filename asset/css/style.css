@@ -295,6 +295,13 @@ lottie-player {
 
 }
 
+.content-mulai {
+    position: relative;
+    z-index: 2;
+    background-color: #f4f4f4;
+    padding: 16px;
+}
+
 .footer-card-mulai {
     display: flex;
     flex-direction: column;
@@ -392,5 +399,8 @@ lottie-player {
 
 .mbak {
     position: absolute;
-    z-index: ;
+    z-index: 1;
+    right: 6px;
+    top: 16px;
+    width: 91px;
 }
