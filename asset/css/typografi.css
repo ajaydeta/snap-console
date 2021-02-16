@@ -3,6 +3,10 @@
     font-size: 48px !important;
 }
 
+a {
+    text-decoration: none;
+}
+
 h1 {
     color: var(--primary) !important;
     font-size: 28px;
