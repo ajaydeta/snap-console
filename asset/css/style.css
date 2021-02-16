@@ -33,11 +33,14 @@ lottie-player {
 }
 
 .title-choose {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     z-index: -2;
     overflow: hidden;
+}
+
+.title-choose>.text-title {
+    position: absolute;
+    z-index: 2;
+    padding: 16px;
 }
 
 .card-setup {
@@ -333,9 +336,11 @@ lottie-player {
 
 .card-foot-mulai {
     display: flex;
-    align-items: flex-end !important;
-    padding: 8px 16px;
-    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center !important;
+    padding:16px;
+    width: 95%;
     height: 50px;
 
     /* Red */
@@ -382,4 +387,10 @@ lottie-player {
 }
 .w-full {
     width: 80% !important;
+}
+/* !! SANDBOX !! */
+
+.mbak {
+    position: absolute;
+    z-index: ;
 }
