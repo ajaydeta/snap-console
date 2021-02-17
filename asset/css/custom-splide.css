@@ -1,0 +1,9 @@
+@import url("./main-var.css");
+
+.splide__slide {
+    margin-right: 24px !important;
+}
+
+.splide__pagination>li>.is-active {
+    background-color: var(--primary);
+}

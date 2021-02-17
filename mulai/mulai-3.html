@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="../asset/bootstrap/dist/css/bootstrap-grid.css">
     <link rel="stylesheet" href="../asset/bootstrap/dist/css/bootstrap-utilities.css">
     <link rel="stylesheet" href="../asset/css/style.css">
+<link rel="stylesheet" href="../asset/css/custom-splide.css">
 
     <script src="../node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
     <link rel="stylesheet" href="../node_modules/@splidejs/splide/dist/css/splide-core.min.css">
     <link rel="stylesheet" href="../node_modules/@splidejs/splide/dist/css/themes/splide-skyblue.min.css">
-
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="../asset/bootstrap/dist/js/bootstrap.js"></script>
 </head>
 
@@ -31,19 +32,23 @@
         </div>
     </div>
     <!-- title -->
-    <div class="title-choose container" style="height: 256px;">
-        <div class="pill-tahap">
-            <div class="m-1 text-center text-gray-2 sub-head-2">
-                Tahap <span class="text-primary">2</span> dari 4
+    <div class="title-choose">
+        <div class="text-title">
+            <div class="pill-tahap">
+                <div class="m-1 text-center text-gray-2 sub-head-2">
+                    Tahap <span class="text-primary">2</span> dari 4
+                </div>
             </div>
+            <h2 class="text-gray-1 mt-4">Pilih layanan yang sesuai <br> kebutuhanmu</h2>
         </div>
-        <h2 class="text-gray-1 mt-4">Pilih layanan yang sesuai <br> kebutuhanmu</h2>
-    </div>
-    <div class="splide">
+        <lottie-player class="lottie-bg" src="https://assets8.lottiefiles.com/private_files/lf30_fi18qmzd.json"
+            background="transparent" speed="1" loop autoplay></lottie-player>
+        </div>
+        <div class="splide container">
         <div class="splide__track">
             <ul class="splide__list">
                 <li class="splide__slide">
-                    <div class="card-mulai-tahap2">
+                    <div class="card-layanan">
                         <div>
                             <div class="p-3">
                                 <div class="lingkaran-nomer">1</div>
@@ -69,7 +74,7 @@
                     </div>
                 </li>
                 <li class="splide__slide">
-                    <div class="card-mulai-tahap2">
+                    <div class="card-layanan">
                         <div>
                             <div class="p-3">
                                 <div class="lingkaran-nomer">2</div>
@@ -95,7 +100,7 @@
                     </div>
                 </li>
                 <li class="splide__slide">
-                    <div class="card-mulai-tahap2">
+                    <div class="card-layanan">
                         <div>
                             <div class="p-3">
                                 <div class="lingkaran-nomer">3</div>
@@ -126,7 +131,9 @@
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
             new Splide('.splide', {
-                arrows: false
+                arrows: false,
+                trimSpace: false,
+                autoWidth: true,
             }).mount();
         });
     </script>
