@@ -20,21 +20,17 @@
 
 <body>
     <!-- title bar -->
-    <div class="shadow-lg container p-4">
-        <span class="d-inline">
-            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7 13L1 7L7 1" stroke="#333333" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg>
-        </span>
+    <div class="top-bar">
+        <img src="../asset/img/arrow-l-gray.svg" class="d-inline">
         <div class="m-3 d-inline">
             Kembali
         </div>
     </div>
-    <!-- title -->
-    <div class="title-choose">
-        <div class="text-title">
-            <div class="pill-tahap">
+    <div class="bg-gradien">
+        <!-- title -->
+        <div class="title-choose">
+            <div class="text-title">
+                <div class="pill-tahap">
                 <div class="m-1 text-center text-gray-2 sub-head-2">
                     Tahap <span class="text-primary">2</span> dari 4
                 </div>
@@ -42,10 +38,10 @@
             <h2 class="text-gray-1 mt-4">Pilih layanan yang sesuai <br> kebutuhanmu</h2>
         </div>
         <lottie-player class="lottie-bg" src="https://assets8.lottiefiles.com/private_files/lf30_fi18qmzd.json"
-            background="transparent" speed="1" loop autoplay></lottie-player>
-        </div>
+        background="transparent" speed="1" loop autoplay></lottie-player>
+    </div>
         <div class="splide container splide-layanan">
-        <div class="splide__track">
+            <div class="splide__track">
             <ul class="splide__list">
                 <li class="splide__slide">
                     <div class="card-layanan">
@@ -128,6 +124,7 @@
             </ul>
         </div>
     </div>
+</div>
     <span class="gedung-bg"></span>
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {

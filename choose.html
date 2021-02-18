@@ -16,15 +16,10 @@
     <script src="./asset/bootstrap/dist/js/bootstrap.js"></script>
 </head>
 
-<body>
+<body class="bg-gradien">
     <!-- title bar -->
-    <div class="shadow-lg container p-4">
-        <span class="d-inline">
-            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7 13L1 7L7 1" stroke="#333333" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg>
-        </span>
+    <div class="top-bar">
+        <img src="./asset/img/arrow-l-gray.svg" class="d-inline">
         <div class="m-3 d-inline">
             Kembali
         </div>
@@ -35,25 +30,26 @@
             <h1 class="text-gray-1 mb-3">Buat SmartConsole Baru</h1>
             <p class="paragraf-1 text-gray-1">Pilih Jenis Console</p>
         </div>
-    <lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_fi18qmzd.json" background="transparent"
-        speed="1" loop autoplay></lottie-player>
+        <lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_fi18qmzd.json" background="transparent"
+            speed="1" loop autoplay></lottie-player>
     </div>
-    <div class="splide splide-choose">
-        <div class="splide__track ">
+        <div class="splide splide-choose">
+            <div class="splide__track ">
             <ul class="splide__list">
                 <li class="splide__slide">
                     <div class="card-choose-slide mx-auto mb-3">
                         <div class="wrapper-animasi d-flex align-items-center">
                             <lottie-player src="https://assets7.lottiefiles.com/private_files/lf30_i00xwl9q.json"
-                                speed="1" loop autoplay>
-                            </lottie-player>
+                            speed="1" loop autoplay>
+                        </lottie-player>
                         </div>
                         <div class="text-center">
                             <h1>Per Stack</h1>
                             <p class="paragraf-1 mt-3">
                                 Tiap mesin memiliki SmartConsole
                             </p>
-                            <a href="./setup/setup.html" class="btn-choose-card text-button text-white my-auto ms-auto">
+                            <a onclick="modalTriger('modal-stack')"
+                                class="btn-choose-card text-button text-white my-auto ms-auto">
                                 Gunakan Jenis Ini
                                 <img src="./asset/img/arrow-r.svg" class="ms-3">
                             </a>
@@ -73,7 +69,7 @@
                                 <p class="paragraf-1 mt-3">
                                     Tiap mesin memiliki SmartConsole
                                 </p>
-                                <a href="./setup/setup.html"
+                                <a onclick="modalTriger('modal-device')"
                                     class="btn-choose-card text-button text-white my-auto ms-auto">
                                     Gunakan Jenis Ini
                                     <img src="./asset/img/arrow-r.svg" class="ms-3">
@@ -84,11 +80,11 @@
                 </li>
                 <li class="splide__slide">
                     <div class="card-choose-slide mx-auto mb-3">
-                    <div class="wrapper-animasi d-flex align-items-center">
-                        <lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_odusdjc0.json" speed="1"
-                            loop autoplay>
-                        </lottie-player>
-                    </div>
+                        <div class="wrapper-animasi d-flex align-items-center">
+                            <lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_odusdjc0.json"
+                                speed="1" loop autoplay>
+                            </lottie-player>
+                        </div>
                         <div class="d-flex align-items-end">
                             <div class="text-center">
                                 <h1>Per Group</h1>
@@ -106,16 +102,96 @@
             </ul>
         </div>
     </div>
-   <span class="gedung-bg"></span>
+    <span class="gedung-bg"></span>
+    
+    <!-- Modal -->
+    <div class="modal" id="modal-stack">
+        <div class="p-3">
+            <h1 class="text-center">Console Stack</h1>
+            <p class="paragraf-1 text-center my-2">Gabungkan Washer & Dryer menjadi 1 SmartConsole</p>
+            <p class="sub-head-1">Mesin di console ini </p>
+            <div class="card-mesin">
+                <div>
+                    <h2>Mesin 1</h2>
+                    <p class="sub-head-1">Belum di Tambahkan</p>
+                </div>
+                <img src="./asset/img/plus.svg">
+            </div>
+            <div class="card-mesin">
+                <div>
+                    <h2>Mesin 2</h2>
+                    <p class="sub-head-1">Belum di Tambahkan</p>
+                </div>
+                <img src="./asset/img/plus.svg">
+            </div>
+            <div class="setup-tips mx-auto">
+                <div class="d-flex flex-row">
+                    <div class="ribbon text-white">
+                        Cara dapat QR Mesin
+                    </div>
+                    <img src="../asset/img/ribbon.svg" style="height: 38px;">
+                </div>
+                <div class="caption px-3 my-2">
+                    SmartOwner Menu > Outlet > Mesin Snapbridge > Icon QR di Pojok Atas
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between mt-5">
+            <div class="btn-kembali-setup">
+                <img class="me-3" src="../asset/img/arrow-l-gray.svg">
+                Kembali
+            </div>
+            <div class="btn-selesai-setup">
+                Selesai
+                <img class="ms-3" src="../asset/img/arrow-r.svg">
+            </div>
+        </div>
+    </div>
 
+    <div class="modal" id="modal-device">
+        <div class="p-3">
+            <h1 class="text-center">Console Device</h1>
+            <p class="paragraf-1 text-center my-2">Gabungkan Washer & Dryer menjadi 1 SmartConsole</p>
+            <p class="sub-head-1">Mesin di console ini </p>
+            <div class="card-mesin">
+                <div>
+                    <h2>Mesin 1</h2>
+                    <p class="sub-head-1">Belum di Tambahkan</p>
+                </div>
+                <img src="./asset/img/plus.svg">
+            </div>
+            <div class="card-mesin">
+                <div>
+                    <h2>Mesin 2</h2>
+                    <p class="sub-head-1">Belum di Tambahkan</p>
+                </div>
+                <img src="./asset/img/plus.svg">
+            </div>
+            <div class="setup-tips mx-auto">
+                <div class="d-flex flex-row">
+                    <div class="ribbon text-white">
+                        Cara dapat QR Mesin
+                    </div>
+                    <img src="../asset/img/ribbon.svg" style="height: 38px;">
+                </div>
+                <div class="caption px-3 my-2">
+                    SmartOwner Menu > Outlet > Mesin Snapbridge > Icon QR di Pojok Atas
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between mt-5">
+            <div class="btn-kembali-setup">
+                <img class="me-3" src="../asset/img/arrow-l-gray.svg">
+                Kembali
+            </div>
+            <div class="btn-selesai-setup">
+                Selesai
+                <img class="ms-3" src="../asset/img/arrow-r.svg">
+            </div>
+        </div>
+    </div>
 
-   <!-- <div style="position: relative; top: 20px;"> -->
-   <!-- Modal -->
-   <div class="modal" style="visibility: hidden;">
-       asd
-   </div>
-   <!-- </div> -->
-
+    <script src="./asset/js/script.js"></script>
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
             new Splide('.splide', {

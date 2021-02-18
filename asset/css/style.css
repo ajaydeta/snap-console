@@ -16,16 +16,31 @@
 }
 
 body {
-    background-color: var(--gray5);
+    background-color: var(--gray5) !important;
 }
 
 lottie-player {
     overflow: hidden;
 }
 
+.bg-gradien {
+    background: var(--gradien-bg) !important;
+    background-repeat: no-repeat !important;
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 16px;
+    height: 56px;
+    background: var(--white);
+    box-shadow: 0px 4px 10px rgba(17, 17, 17, 0.1);
+}
+
 .lottie-bg {
     margin-top: -3px;
-    margin-bottom: -15px;
+    margin-bottom: -35px;
 }
 
 .splide-layanan {
@@ -84,7 +99,6 @@ lottie-player {
     left: 52px;
     top: 0px;
     background: var(--white);
-
     border-radius: 100%;
     box-shadow: 5px 5px 20px #929292;
 }
@@ -253,8 +267,6 @@ lottie-player {
     position: static;
     width: 90%;
     background: #FFFFFF;
-    /* dropshadow */
-
     box-shadow: 0px 4px 10px rgba(17, 17, 17, 0.1);
     border-radius: 8px;
 }
@@ -366,23 +378,6 @@ lottie-player {
     background: #FFB320;
     box-shadow: 0px 4px 10px rgba(238, 154, 28, 0.2);
     }
-
-    .modal {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        padding: 16px 0px;
-        top: 16px;
-        left: 16px;
-        position: absolute;
-        width: 328px;
-        height: 688px;
-        background: #000000;
-        box-shadow: 0px 0px 20px 20px rgba(33, 111, 255, 0.671);
-        border-radius: 16px;
-        z-index: 3;
-}
-
 .card {
     background: #FFFFFF;
     box-shadow: 0px 8px 20px rgba(33, 109, 255, 0.15);
@@ -409,13 +404,12 @@ lottie-player {
 }
 
 .pill-tahap {
-    padding: 4px 12px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
     width: 128px;
     height: 30px;
-
     background: #FFFFFF;
-    /* DropColor/Primary */
-
     box-shadow: 0px 4px 10px rgba(32, 108, 255, 0.2);
     border-radius: 42px;
 }
@@ -460,7 +454,7 @@ lottie-player {
 
 .mbak {
     position: absolute;
-    z-index: 1;
+    z-index:2;
     right: 6px;
     top: 16px;
     width: 91px;
@@ -476,4 +470,48 @@ lottie-player {
     position: relative;
     display: flex;
     flex-direction: column;
+}
+.modal {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0px;
+    margin: 16px;
+    top: 16px;
+    position: absolute;
+    background: var(--white);
+    box-shadow: 0px 0px 20px 20px rgba(33, 109, 255, 0.15);
+    border-radius: 16px;
+    z-index: 3;
+    visibility: hidden;
+}
+
+.card-mesin {
+    margin: 20px auto;
+    position: relative;
+    padding: 16px;
+    background: transparent;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.setup-tips {
+    padding: 16px 0;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(17, 17, 17, 0.1);
+    border-radius: 8px;
+}
+
+.card-nganu {
+    background: #FFFFFF;
+    box-shadow: 0px 8px 20px rgba(33, 109, 255, 0.15);
+    border-radius: 8px;
+    padding: 16px;
+    background-image: url(../img/dot-bg-biru.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 16px;
 }

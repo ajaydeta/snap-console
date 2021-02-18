@@ -9,4 +9,5 @@
     --yellow: #FFB320;
     --gray5: #f4f4f4;
     --red: #EB5757;
+    --gradien-bg:linear-gradient(180deg, #E5F6FE 47.19%, #f4f4f4);
 }

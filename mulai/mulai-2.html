@@ -15,13 +15,8 @@
 
 <body>
     <!-- title bar -->
-    <div class="shadow-lg container p-4">
-        <span class="d-inline">
-            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7 13L1 7L7 1" stroke="#333333" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg>
-        </span>
+    <div class="top-bar">
+        <img src="../asset/img/arrow-l-gray.svg" class="d-inline">
         <div class="m-3 d-inline">
             Kembali
         </div>
@@ -38,31 +33,29 @@
         </div>
         <lottie-player class="lottie-bg" src="https://assets8.lottiefiles.com/private_files/lf30_fi18qmzd.json"
             background="transparent" speed="1" loop autoplay></lottie-player>
-        </div>
+    </div>
+    <div class="bg-gradien">
     <div class="d-flex justify-content-end">
         <lottie-player class="lottie-mesin-cuci" src="https://assets6.lottiefiles.com/private_files/lf30_gocqudvr.json"
             speed="1" loop autoplay>
         </lottie-player>
     </div>
-    <div class="d-flex flex-column fixed-bottom">
-        <div class="setup-qr-tips mx-auto">
-            <div class="d-flex flex-row">
-                <div class="ribbon text-white">
-                    Cara dapat QR Mesin
+        <div class="d-flex flex-column fixed-bottom">
+            <div class="setup-qr-tips mx-auto">
+                <div class="d-flex flex-row">
+                    <div class="ribbon text-white">
+                        Cara dapat QR Mesin
+                    </div>
+                    <img src="../asset/img/ribbon.svg" style="height: 38px;">
                 </div>
-                <img src="../asset/img/ribbon.svg" style="height: 38px;">
+                <div class="caption px-3 my-2">
+                    SmartOwner Menu > Outlet > Mesin Snapbridge > Icon QR di Pojok Atas
+                </div>
             </div>
-            <div class="caption px-3 my-2">
-                SmartOwner Menu > Outlet > Mesin Snapbridge > Icon QR di Pojok Atas
-            </div>
+            <a class="btn-primary mx-auto my-3" href="./mulai-3.html">Oke, Lanjutkan</a>
         </div>
-        <a class="btn-primary mx-auto my-3" href="./mulai-3.html">Oke, Lanjutkan</a>
     </div>
-<span class="gedung-bg"></span>
-    <script>
-        import Splide from './node_modules/@splidejs/splide';
-        new Splide('.splide').mount();
-    </script>
+    <span class="gedung-bg"></span>
 </body>
 
 </html>
