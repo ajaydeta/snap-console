@@ -3,3 +3,16 @@
 .splide__slide {
     margin-right: 24px !important;
 }
+
+.splide__slide .card-layanan {
+    transform: scale(1);
+    transition: all 700ms;
+
+}
+.splide__slide:not(.is-active) .card-layanan {
+
+    /*height: 300px;*/
+    margin-top: 25px;
+    opacity: 1;
+    transform: scale(0.85);
+}
