@@ -15,6 +15,10 @@
     overflow-x: hidden;
 }
 
+body {
+    background-color: var(--gray5);
+}
+
 lottie-player {
     overflow: hidden;
 }
@@ -30,17 +34,17 @@ lottie-player {
 }
 
 .splide-choose {
-        margin-top: -120px;
-        height: 550px;
-    }
+    margin-top: -120px;
+    height: 550px;
+}
 
-    .splide__pagination>li>.is-active {
-        background-color: var(--primary);
-    }
+.splide__pagination>li>.is-active {
+    background-color: var(--primary);
+}
 
-    .splide__pagination>li>.is-active:hover {
-        background-color: var(--primary);
-    }
+.splide__pagination>li>.is-active:hover {
+    background-color: var(--primary);
+}
 
 .ilustrasi {
     width: 174px;
@@ -139,6 +143,29 @@ lottie-player {
     border-radius: 8px 0 0 8px;
 }
 
+.btn-choose-card-disable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+    margin-top: 24px !important;
+
+    position: static;
+    width: 65%;
+    height: 56px;
+
+    /* Primary/1 */
+    color: var(--white);
+    background: var(--gray4);
+    text-decoration: none;
+
+    border-radius: 8px 0 0 8px;
+}
+
+.btn-choose-card-disable:hover {
+    background-color: var(--red);
+}
+
 .btn-outline-primary {
     display: flex;
     flex-direction: column;
@@ -154,7 +181,7 @@ lottie-player {
 
     /* Primary/1 */
     color: var(--primary);
-    background: transparent;
+    background: var(--white);
     border: 3px solid var(--primary);
     border-radius: 4px;
     text-decoration: none;
@@ -336,12 +363,24 @@ lottie-player {
 }
 .ribbon {
     padding: 8px 12px;
-    /* Accent */
-
     background: #FFB320;
-    /* DropColor/Accent */
-
     box-shadow: 0px 4px 10px rgba(238, 154, 28, 0.2);
+    }
+
+    .modal {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 16px 0px;
+        top: 16px;
+        left: 16px;
+        position: absolute;
+        width: 328px;
+        height: 688px;
+        background: #000000;
+        box-shadow: 0px 0px 20px 20px rgba(33, 111, 255, 0.671);
+        border-radius: 16px;
+        z-index: 3;
 }
 
 .card {
@@ -399,6 +438,17 @@ lottie-player {
     left: 0;
     z-index: 1030;
 }
+.gedung-bg {
+    background-image: url("../img/gedung.svg");
+    background-repeat: repeat;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -5;
+    height: 96px;
+}
+
 .bg-image-mulai {
     background-image: url('../img/bg-mulai.png');
     background-size: cover;
