@@ -43,6 +43,12 @@ lottie-player {
     margin-bottom: -35px;
 }
 
+.lottie-setup-selesai {
+    margin-top: -240px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .splide-layanan {
     margin-top: -80px;
     height: 401px;
@@ -396,7 +402,7 @@ lottie-player {
 }
 
 .content-setup-selesai {
-    margin: -45% auto 0 auto;
+    margin: -60px auto 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -441,6 +447,7 @@ lottie-player {
     left: 0;
     z-index: -5;
     height: 96px;
+    background-color: var(--gray5);
 }
 
 .bg-image-mulai {
