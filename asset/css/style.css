@@ -233,6 +233,31 @@ lottie-player {
     border-radius: 0 8px 8px 0;
 }
 
+.btn-pill-white {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 222px;
+    height: 48px;
+    border: #bdbdbd solid 1px;
+    background: var(--white);
+    border-radius: 30px;
+    color: #4f4f4f;
+}
+
+.btn-pill-primary {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 222px;
+    height: 48px;
+    background: var(--primary);
+    border-radius: 30px;
+    color: var(--white);
+}
+
 .card-choose-slide {
     display: flex;
     flex-direction: column;
@@ -477,6 +502,29 @@ lottie-player {
     height: 250px;
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    display: block;
+    z-index: 2;
+    /* visibility: hidden; */
+}
+
+.modal-bottom {
+    position: absolute;
+    background-color: var(--white);
+    border-radius: 16px 16px 0 0;
+    height: 45%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: block;
+    overflow: hidden !important;
+}
 /* !! SANDBOX !! */
 
 .mbak {
@@ -535,12 +583,8 @@ lottie-player {
     background-position: 95% 16px;
     margin-bottom: 24px;
 }
-.overlay {
+.ilustrasi-modal-konfirmasi {
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #000000, 25%;
-    display: block;
+    right: -30px;
+    bottom: -30px;
 }
