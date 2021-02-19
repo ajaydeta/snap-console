@@ -21,6 +21,7 @@ h2 {
 
 .sub-head-1 {
     font-weight: 600;
+    font-style: normal;
     font-size: 16px;
     color: #828282;
     line-height: 140%;
@@ -88,4 +89,7 @@ h2 {
 
 .bg-gray-5 {
     background-color: var(--gray-5);
+}
+.font-bold {
+    font-weight: bolder !important;
 }

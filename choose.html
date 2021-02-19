@@ -104,75 +104,82 @@
     </div>
     <span class="gedung-bg"></span>
     
-    <!-- Modal -->
+    <!-- ! Modal Stack -->
     <div class="modal" id="modal-stack">
         <div class="p-3">
             <h1 class="text-center">Console Stack</h1>
-            <p class="paragraf-1 text-center my-2">Gabungkan Washer & Dryer menjadi 1 SmartConsole</p>
-            <p class="sub-head-1">Mesin di console ini </p>
-            <div class="card-mesin">
-                <div>
-                    <h2>Mesin 1</h2>
-                    <p class="sub-head-1">Belum di Tambahkan</p>
+            <p class="paragraf-1 text-center my-2">
+                Gabungkan <span class="font-bold">Washer & Dryer</span> menjadi 1 SmartConsole
+            </p>
+            <p class="sub-head-1 mt-4">Mesin di console ini </p>
+            <div class="modal-content">
+                <div class="card-mesin">
+                    <div>
+                        <h2 class="mb-2">Mesin 1</h2>
+                        <p class="sub-head-1">Belum di Tambahkan</p>
+                    </div>
+                    <img src="./asset/img/plus.svg">
                 </div>
-                <img src="./asset/img/plus.svg">
-            </div>
-            <div class="card-mesin">
-                <div>
-                    <h2>Mesin 2</h2>
-                    <p class="sub-head-1">Belum di Tambahkan</p>
+                <div class="card-mesin">
+                    <div>
+                        <h2 class="mb-2">Mesin 2</h2>
+                        <p class="sub-head-1">Belum di Tambahkan</p>
+                    </div>
+                    <img src="./asset/img/plus.svg">
                 </div>
-                <img src="./asset/img/plus.svg">
             </div>
             <div class="setup-tips mx-auto">
                 <div class="d-flex flex-row">
                     <div class="ribbon text-white">
                         Cara dapat QR Mesin
                     </div>
-                    <img src="../asset/img/ribbon.svg" style="height: 38px;">
+                    <img src="./asset/img/ribbon.svg" style="height: 38px;">
                 </div>
                 <div class="caption px-3 my-2">
-                    SmartOwner Menu > Outlet > Mesin Snapbridge > Icon QR di Pojok Atas
+                    Buka SmartOwner >
+                    Menu <span class="font-bold">Outlet & Workshop</span> >
+                    Pilih Outlet >
+                    Daftar Mesin Snapbridge >
+                    Info QRIS
                 </div>
             </div>
         </div>
         <div class="d-flex justify-content-between mt-5">
-            <div class="btn-kembali-setup">
-                <img class="me-3" src="../asset/img/arrow-l-gray.svg">
+            <a onclick="modalClose('modal-stack')" class="btn-kembali-setup">
+                <img class="me-3" src="./asset/img/arrow-l-gray.svg">
                 Kembali
-            </div>
+            </a>
             <div class="btn-selesai-setup">
                 Selesai
-                <img class="ms-3" src="../asset/img/arrow-r.svg">
+                <img class="ms-3" src="./asset/img/arrow-r.svg">
             </div>
         </div>
     </div>
+    <!-- !End Modal Stack -->
 
+    <!-- !Modal Device -->
     <div class="modal" id="modal-device">
         <div class="p-3">
             <h1 class="text-center">Console Device</h1>
-            <p class="paragraf-1 text-center my-2">Gabungkan Washer & Dryer menjadi 1 SmartConsole</p>
-            <p class="sub-head-1">Mesin di console ini </p>
-            <div class="card-mesin">
-                <div>
-                    <h2>Mesin 1</h2>
-                    <p class="sub-head-1">Belum di Tambahkan</p>
+            <p class="paragraf-1 text-center my-2">
+                <span class="font-bold">Tiap mesin</span> memiliki SmartConsole
+            </p>
+            <p class="sub-head-1 mt-4">Mesin di console ini </p>
+            <div class="modal-content">
+                <div class="card-mesin">
+                    <div>
+                        <h2 class="mb-2">Mesin 1</h2>
+                        <p class="sub-head-1">Belum di Tambahkan</p>
+                    </div>
+                    <img src="./asset/img/plus.svg">
                 </div>
-                <img src="./asset/img/plus.svg">
-            </div>
-            <div class="card-mesin">
-                <div>
-                    <h2>Mesin 2</h2>
-                    <p class="sub-head-1">Belum di Tambahkan</p>
-                </div>
-                <img src="./asset/img/plus.svg">
             </div>
             <div class="setup-tips mx-auto">
                 <div class="d-flex flex-row">
                     <div class="ribbon text-white">
                         Cara dapat QR Mesin
                     </div>
-                    <img src="../asset/img/ribbon.svg" style="height: 38px;">
+                    <img src="./asset/img/ribbon.svg" style="height: 38px;">
                 </div>
                 <div class="caption px-3 my-2">
                     SmartOwner Menu > Outlet > Mesin Snapbridge > Icon QR di Pojok Atas
@@ -180,16 +187,17 @@
             </div>
         </div>
         <div class="d-flex justify-content-between mt-5">
-            <div class="btn-kembali-setup">
-                <img class="me-3" src="../asset/img/arrow-l-gray.svg">
+            <a onclick="modalClose('modal-device')" class="btn-kembali-setup">
+                <img class="me-3" src="./asset/img/arrow-l-gray.svg">
                 Kembali
-            </div>
+            </a>
             <div class="btn-selesai-setup">
                 Selesai
-                <img class="ms-3" src="../asset/img/arrow-r.svg">
+                <img class="ms-3" src="./asset/img/arrow-r.svg">
             </div>
         </div>
     </div>
+    <!-- ! End modal Device -->
 
     <script src="./asset/js/script.js"></script>
     <script type="text/javascript">

@@ -450,6 +450,24 @@ lottie-player {
 .w-full {
     width: 80% !important;
 }
+.modal {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0px;
+    margin: 16px;
+    top: 16px;
+    position: absolute;
+    background: var(--white);
+    box-shadow: 0px 0px 20px 20px rgba(33, 109, 255, 0.15);
+    border-radius: 16px;
+    z-index: 3;
+    visibility: hidden;
+}
+
+.modal-content {
+    height: 250px;
+}
+
 /* !! SANDBOX !! */
 
 .mbak {
@@ -470,19 +488,6 @@ lottie-player {
     position: relative;
     display: flex;
     flex-direction: column;
-}
-.modal {
-    display: flex;
-    flex-direction: column;
-    padding: 16px 0px;
-    margin: 16px;
-    top: 16px;
-    position: absolute;
-    background: var(--white);
-    box-shadow: 0px 0px 20px 20px rgba(33, 109, 255, 0.15);
-    border-radius: 16px;
-    z-index: 3;
-    visibility: hidden;
 }
 
 .card-mesin {
