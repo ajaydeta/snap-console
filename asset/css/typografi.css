@@ -10,6 +10,9 @@ a {
 h1 {
     color: var(--primary) !important;
     font-size: 28px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 140%;
 }
 
 h2 {
@@ -92,4 +95,7 @@ h2 {
 }
 .font-bold {
     font-weight: bolder !important;
+}
+.text-24px {
+    font-size: 24px !important;
 }
