@@ -599,3 +599,73 @@ lottie-player {
     flex-direction: column;
     justify-content: space-between;
 }
+.bg-pin {
+    background-color: #4f4f4f !important;
+}
+
+.top-bar-login {
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background: rgba(34, 34, 34, 0.5);
+    backdrop-filter: blur(4px);
+    margin-bottom: 24px;
+}
+
+.title-pin {
+    margin: 0 48px 48px 48px;
+    color: var(--white);
+}
+
+.dot-pin-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 24px;
+}
+
+.dot-pin {
+    width: 12px;
+    height: 12px;
+    border: .5px solid white;
+    border-radius: 100%;
+    margin: 0 15px 0 15px;
+}
+
+.num-pin-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 60px;
+}
+
+.sub-num-pin-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+
+.sub-num-pin-wrapper:nth-child(4) {
+    justify-content: center;
+}
+
+.circle-num {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.37);
+
+    /* Glass */
+    backdrop-filter: blur(6px);
+}
