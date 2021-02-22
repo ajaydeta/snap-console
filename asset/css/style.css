@@ -400,6 +400,9 @@ lottie-player {
 
     background: rgba(34, 34, 34, 0.5);
     backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .flex {
@@ -559,6 +562,7 @@ lottie-player {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .card-tips {
