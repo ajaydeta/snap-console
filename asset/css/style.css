@@ -528,22 +528,76 @@ lottie-player {
     display: block;
     overflow: hidden !important;
 }
-/* !! SANDBOX !! */
+.bg-pin {
+    background-color: #4f4f4f !important;
+}
 
-.mbak {
-    position: absolute;
-    z-index:2;
-    right: 6px;
-    top: 16px;
-    width: 91px;
+.top-bar-login {
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background: rgba(34, 34, 34, 0.5);
+    backdrop-filter: blur(4px);
+    margin-bottom: 24px;
 }
-.mbak-kuning {
-    position: absolute;
-    z-index: 1;
-    left: 70%;
-    top: 100px;
-    width: 149.2px;
+.title-pin {
+    margin: 0 48px 48px 48px;
+    color: var(--white);
 }
+
+.dot-pin-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 24px;
+}
+
+.dot-pin {
+    width: 12px;
+    height: 12px;
+    border: .5px solid white;
+    border-radius: 100%;
+    margin: 0 15px 0 15px;
+}
+
+.num-pin-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 60px;
+}
+
+.sub-num-pin-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+
+.sub-num-pin-wrapper:nth-child(4) {
+    justify-content: center;
+}
+
+.circle-num {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.37);
+
+    /* Glass */
+    backdrop-filter: blur(6px);
+}
+/* !! SANDBOX !! */
 .njeng {
     position: relative;
     display: flex;
@@ -603,73 +657,27 @@ lottie-player {
     flex-direction: column;
     justify-content: space-between;
 }
-.bg-pin {
-    background-color: #4f4f4f !important;
-}
 
-.top-bar-login {
-    color: var(--white);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 16px;
-    background: rgba(34, 34, 34, 0.5);
-    backdrop-filter: blur(4px);
-    margin-bottom: 24px;
-}
-
-.title-pin {
-    margin: 0 48px 48px 48px;
-    color: var(--white);
-}
-
-.dot-pin-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 24px;
-}
-
-.dot-pin {
-    width: 12px;
-    height: 12px;
-    border: .5px solid white;
-    border-radius: 100%;
-    margin: 0 15px 0 15px;
-}
-
-.num-pin-wrapper {
+.card-group-setting {
+    background-color: var(--white);
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 0 60px;
+    padding: 16px;
+    width: 85%;
 }
 
-.sub-num-pin-wrapper {
+.wrapper-setting {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 12px 0;
-}
-
-.sub-num-pin-wrapper:nth-child(4) {
-    justify-content: center;
-}
-
-.circle-num {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    color: #fff;
-    display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    height: 64px;
-    width: 64px;
-    border-radius: 100%;
-    background: rgba(0, 0, 0, 0.37);
+    margin-bottom:20px;
+}
 
-    /* Glass */
-    backdrop-filter: blur(6px);
+.setting-devider {
+    border: 1px solid #E0E0E0;
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
 }
