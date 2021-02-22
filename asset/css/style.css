@@ -7,6 +7,14 @@
 @import url("./typografi.css");
 @import url("./animasi.css");
 
+@font-face {
+    font-family: 'DigitalFont';
+    src:url("../font/ds_digital/DS-DIGI.TTF")  format('truetype'); /* Safari, Android, iOS */
+}
+.font-digital{
+    font-family: "DigitalFont", sans-serif !important;
+}
+
 * {
     font-family: "Nunito",
         sans-serif !important;
