@@ -1,101 +1,108 @@
+@font-face {
+  font-family: "DigitalFont";
+  src: url("../font/ds_digital/DS-DIGI.TTF") format("truetype"); /* Safari, Android, iOS */
+}
+.font-digital {
+  font-family: "DigitalFont", sans-serif !important;
+}
+
 .text-lg {
-    color: var(--primary) !important;
-    font-size: 48px !important;
+  color: var(--primary) !important;
+  font-size: 48px !important;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 h1 {
-    color: var(--primary) !important;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 140%;
+  color: var(--primary) !important;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 140%;
 }
 
 h2 {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 140%;
-    color: var(--gray2);
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--gray2);
 }
 
 .sub-head-1 {
-    font-weight: 600;
-    font-style: normal;
-    font-size: 16px;
-    color: #828282;
-    line-height: 140%;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  color: #828282;
+  line-height: 140%;
 }
 
 .sub-head-2 {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 140%;
-    color: #6398FF;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  color: #6398ff;
 }
 
 .paragraf-1 {
-    color: var(--gray2);
-    font-size: 20px;
+  color: var(--gray2);
+  font-size: 20px;
 }
 
 .paragraf-2 {
-    font-size: 18px;
-    line-height: 145%;
-    color: #4F4F4F;
+  font-size: 18px;
+  line-height: 145%;
+  color: #4f4f4f;
 }
 
 .caption {
-    font-size: 16px;
-    color: #828282;
+  font-size: 16px;
+  color: #828282;
 }
 
 .text-button {
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;
-    font-style: normal;
-    color: #4F4F4F;
-
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+  color: #4f4f4f;
 }
 
 .text-secondary {
-    color: var(--secondary) !important;
+  color: var(--secondary) !important;
 }
 
 .text-gray-1 {
-    color: var(--gray1) !important;
+  color: var(--gray1) !important;
 }
 
 .text-gray-2 {
-    color: var(--gray2);
+  color: var(--gray2);
 }
 
 .text-gray-3 {
-    color: var(--gray3);
+  color: var(--gray3);
 }
 
 .text-yellow {
-    color: var(--yellow);
+  color: var(--yellow);
 }
 
 .text-red {
-    color: var(--red) !important;
+  color: var(--red) !important;
 }
 
 .bg-gray-4 {
-    background-color: #bdbdbd;
+  background-color: #bdbdbd;
 }
 
 .bg-gray-5 {
-    background-color: var(--gray-5);
+  background-color: var(--gray-5);
 }
 .font-bold {
-    font-weight: bolder !important;
+  font-weight: bolder !important;
 }
 .text-24px {
-    font-size: 24px !important;
+  font-size: 24px !important;
 }
