@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../asset/bootstrap/dist/css/bootstrap-grid.css">
     <link rel="stylesheet" href="../asset/bootstrap/dist/css/bootstrap-utilities.css">
     <link rel="stylesheet" href="../asset/css/style.css">
+    <script src="../asset/js/script.js"></script>
     <script src="../asset/bootstrap/dist/js/bootstrap.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
@@ -47,24 +48,30 @@
         <lottie-player class="lottie-bg" src="https://assets8.lottiefiles.com/private_files/lf30_fi18qmzd.json"
             background="transparent" speed="1" loop autoplay></lottie-player>
     </div>
-    <div class="card p-3 mx-auto w-full my-4">
+    <div class="card p-3 mx-auto w-full my-4" onclick="modalTriger('qr-modal')">
         <div class="text-center">
             <h2>Scan dengan E-Wallet</h2>
-            <a href="./berhasil-bayar.html">
-                <img src="../asset/img/qr-pembayaran.png" class="my-3">
-            </a>
-            <p class="sub-head-1">Tap untuk membesarkan </p>
+            <img src="../asset/img/qr-pembayaran.png" class="mt-3" style="height: 208px;">
+            <p class="sub-head-1 mb-3">Tap untuk membesarkan </p>
             <h1>Rp 25.000</h1>
         </div>
-        <div class="d-flex justify-content-between my-4">
-            <p class="paragraf-1">Waktu tersisa</p>
-            <div class="d-flex">
-                <img src="../asset/img/jam.svg" alt="">
-                <p class="paragraf-1 ms-2">01:00</p>
+    </div>
+    <div class="d-block px-3">
+        <a href="" class="btn-outline-primary">Saya Sudah Bayar (Cek Manual)</a>
+    </div>
+    <span class="gedung-bg"></span>
+
+    <!-- Modal -->
+    <div id="overlay"></div>
+    <div class="modal modal-center" id="qr-modal" onclick="modalClose('qr-modal')">
+        <div class="px-3">
+            <img class="mb-3" src="../asset/img/qr-pembayaran.png">
+            <div class="text-center">
+                <p class="text-display text-primary mb-3">Rp 25.000</p>
+                <p class="sub-head-1">Tap untuk mengecilkan</p>
             </div>
         </div>
     </div>
-    <span class="gedung-bg"></span>
 </body>
 
 </html>

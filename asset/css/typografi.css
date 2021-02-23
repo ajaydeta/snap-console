@@ -18,7 +18,7 @@ a {
 
 h1 {
   color: var(--primary) !important;
-  font-size: 28px;
+  font-size: 24px;
   font-style: normal;
   font-weight: bold;
   line-height: 140%;
@@ -40,6 +40,7 @@ h2 {
 }
 
 .sub-head-2 {
+  font-style: ;
   font-weight: 600;
   font-size: 14px;
   line-height: 140%;
@@ -113,4 +114,15 @@ h2 {
 }
 .text-24px {
   font-size: 24px !important;
+}
+.text-28px {
+  font-size: 28px !important;
+}
+
+.text-display {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 140%;
 }
