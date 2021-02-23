@@ -14,10 +14,6 @@
   overflow-x: hidden;
 }
 
-body {
-  background-color: var(--gray5) !important;
-}
-
 lottie-player {
   overflow: hidden;
 }
@@ -25,6 +21,11 @@ lottie-player {
 .bg-gradien {
   background: var(--gradien-bg) !important;
   background-repeat: no-repeat !important;
+  position: absolute !important;
+  top: 230px;
+  height: 200px;
+  width: 100%;
+  z-index: -5;
 }
 
 .top-bar {
@@ -40,6 +41,12 @@ lottie-player {
 .lottie-bg {
   margin-top: -3px;
   margin-bottom: -35px;
+}
+
+.lottie-bg-mulai {
+  position: absolute;
+  z-index: -2;
+  top: 0;
 }
 
 .lottie-setup-selesai {
@@ -464,13 +471,8 @@ lottie-player {
   left: 0;
   z-index: -5;
   height: 96px;
-  background-color: var(--gray5);
 }
 
-.bg-image-mulai {
-  background-image: url("../img/bg-mulai.png");
-  background-size: cover;
-}
 .w-full {
   width: 80% !important;
 }
