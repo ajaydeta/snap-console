@@ -57,7 +57,8 @@ lottie-player {
 
 .splide-layanan {
   margin-top: -80px;
-  height: 401px;
+  height: 470px;
+  padding: 0 16px;
 }
 
 .splide-choose {
@@ -91,6 +92,7 @@ lottie-player {
   position: absolute;
   z-index: 2;
   padding: 16px;
+  width: 85%;
 }
 
 .card-setup {
@@ -123,7 +125,7 @@ lottie-player {
   background-color: var(--gray4) !important;
 }
 
-.bg-gray-5{
+.bg-gray-5 {
   background-color: var(--gray5) !important;
   z-index: -5;
 }
@@ -350,8 +352,8 @@ lottie-player {
   align-items: flex-start;
 
   position: relative;
-  width: 256px;
-  height: 352px;
+  width: 264px;
+  height: 420px;
   background: linear-gradient(136.06deg, #ffffff 50.7%, #c8e8fe 83.86%);
   /* DropColor/Primary */
 
