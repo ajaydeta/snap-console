@@ -26,12 +26,14 @@
             </div>
             <h2 class="text-gray-1 my-4">Bayar dengan QR</h2>
             <div class="card-head-bayar">
-                <div class="d-flex justify-content-between">
-                    <h1 class="text-gray-1 text-24px">Cuci Baju Bersih Dan Setrika 5KG 1 Jam </h1>
+                <div class="content">
+                    <div style="width: 70%;">
+                        <h1 class="text-gray-1 text-24px">Cuci Baju Bersih Dan Setrika 5KG 1 Jam</h1>
+                    </div>
                     <div class="d-flex">
-                        <img src="../asset/img/ribbon-left.svg">
-                        <div class="bg-primary d-flex justify-content-center align-items-center" style="width: 78px;">
-                            <p class="sub-head-2 text-white">Terpilih</p>
+                        <img src="../asset/img/ribbon-left.svg" style="height: 38px;">
+                        <div class="ribbon-biru sub-head-2 text-white">
+                            Terpilih
                         </div>
                     </div>
                 </div>
@@ -44,16 +46,18 @@
         <lottie-player class="lottie-bg" src="https://assets8.lottiefiles.com/private_files/lf30_fi18qmzd.json"
             background="transparent" speed="1" loop autoplay></lottie-player>
     </div>
-    <div class="card p-3 mx-auto w-full my-4" onclick="modalTriger('qr-modal')">
-        <div class="text-center">
-            <h2>Scan dengan E-Wallet</h2>
-            <img src="../asset/img/qr-pembayaran.png" class="mt-3" style="height: 208px;">
-            <p class="sub-head-1 mb-3">Tap untuk membesarkan </p>
-            <h1>Rp 25.000</h1>
+    <div class="fixed-bottom" style="z-index: -2;">
+        <div class="card p-3 mx-auto w-full my-4" onclick="modalTriger('qr-modal')">
+            <div class="text-center">
+                <h2>Scan dengan E-Wallet</h2>
+                <img src="../asset/img/qr-pembayaran.png" class="mt-3" style="height: 208px;">
+                <p class="sub-head-1 mb-3">Tap untuk membesarkan </p>
+                <h1>Rp 25.000</h1>
+            </div>
         </div>
-    </div>
-    <div class="d-block px-3">
-        <a href="" class="btn-outline-primary">Saya Sudah Bayar (Cek Manual)</a>
+        <div class="d-block px-3 mb-3">
+            <a href="" class="btn-outline-primary">Saya Sudah Bayar (Cek Manual)</a>
+        </div>
     </div>
     <span class="gedung-bg"></span>
 

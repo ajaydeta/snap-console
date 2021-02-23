@@ -413,6 +413,16 @@ lottie-player {
   background: #ffb320;
   box-shadow: 0px 4px 10px rgba(238, 154, 28, 0.2);
 }
+
+.ribbon-biru {
+  padding: 0 12px;
+  background: var(--primary);
+  box-shadow: 0px 4px 10px rgba(238, 154, 28, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+}
 .card {
   background: #ffffff;
   box-shadow: 0px 8px 20px rgba(33, 109, 255, 0.15);
@@ -655,6 +665,11 @@ lottie-player {
 
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-head-bayar > .content {
+  display: flex;
   justify-content: space-between;
 }
 
