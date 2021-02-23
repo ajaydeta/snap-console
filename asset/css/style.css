@@ -45,7 +45,7 @@ lottie-player {
 
 .lottie-bg-mulai {
   position: absolute;
-  z-index: -2;
+  z-index: -1;
   top: 0;
 }
 
@@ -121,6 +121,11 @@ lottie-player {
 
 .bg-gray-4 {
   background-color: var(--gray4) !important;
+}
+
+.bg-gray-5{
+  background-color: var(--gray5) !important;
+  z-index: -5;
 }
 
 .text-center {
