@@ -5,90 +5,182 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document tes</title>
     <link rel="stylesheet" href="../asset/bootstrap/dist/css/bootstrap-grid.css">
     <link rel="stylesheet" href="../asset/bootstrap/dist/css/bootstrap-utilities.css">
     <link rel="stylesheet" href="../asset/css/style.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="../node_modules/@splidejs/splide/dist/js/splide.js" type="module"></script>
+    <link rel="stylesheet" href="../node_modules/@splidejs/splide/dist/css/splide-core.min.css">
+    <link rel="stylesheet" href="../node_modules/@splidejs/splide/dist/css/themes/splide-skyblue.min.css">
+    <script src="../asset/bootstrap/dist/js/bootstrap.js"></script>
 </head>
 
-<body class="bg-secondary m-3">
-    <div class="card-setup mx-auto">
-        <div class="p-3">
-            <span class="ilustrasi mx-auto"></span>
-            <div class="text-center mb-4">
-                <h1 class="mb-3">Per Stack</h1>
-                <p class="paragraf-1">Gabungkan <strong>Washer & Dryer</strong> menjadi 1 SmartConsole</p>
-            </div>
-            <h5 class="sub-head-1 my-2">Mesin di console ini </h5>
-            <div class="row card-setup-mesin px-2">
-                <div class="col-8 my-auto">
-                    <h2>Washer 1</h2>
-                    <p class="sub-head-1 my-1">Mesin Cuci</p>
-                    <p class="sub-head-2 my-1">
-                        SN12345678910
-                    </p>
-                </div>
-                <div class="col-4 text-end my-auto">
-                    <span class="text-button">
-                        Ganti
-                    </span>
-                    <span>
-                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 13L7 7L1 1" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </span>
-                </div>
-            </div>
-            <div class="row card-setup-mesin px-2">
-                <div class="col-8 my-auto">
-                    <h2>Dryer 1</h2>
-                    <p class="sub-head-1 my-1">Mesin Pengering</p>
-                    <p class="sub-head-2 my-1">
-                        SN12333423221
-                    </p>
-                </div>
-                <div class="col-4 text-end my-auto">
-                    <span class="text-button">
-                        Ganti
-                    </span>
-                    <span>
-                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 13L7 7L1 1" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div class="d-flex flex-column">
-            <div class="setup-qr-tips mx-auto">
-                <div class="row my-auto px-3">
-                    <div class="col-10 sub-head-1">
-                    Semua telah siap!
-                </div>
-                <div class="col-2">
-                    <span>
-                        <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17 1L6 12L1 7" stroke="#206CFF" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        </svg>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div class="d-flex justify-content-between mt-auto">
-            <div class="btn-kembali-setup">
-                <img class="me-3" src="../asset/img/arrow-l-gray.svg">
+<body>
+    <div class="bg-gradien"></div>
+    <!-- title bar -->
+    <div class="top-bar">
+        <a href="../index.html">
+            <img src="../asset/img/arrow-l-gray.svg" class="d-inline">
+            <div class="m-3 d-inline">
                 Kembali
             </div>
-            <a href="./setup-selesai.html" class="btn-selesai-setup bg-primary">
+        </a>
+    </div>
+    <!-- title -->
+    <div class="title-choose">
+        <div class="text-title">
+            <h1 class="text-gray-1 mb-3">Buat SmartConsole Baru</h1>
+            <h2 class="text-gray-1">Pilih Jenis Console</h2>
+        </div>
+        <lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_fi18qmzd.json" background="transparent"
+            speed="1" loop autoplay></lottie-player>
+    </div>
+    <div class="splide splide-choose">
+        <div class="splide__track ">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <div class="card-choose-slide mx-auto mb-3">
+                        <div class="wrapper-animasi d-flex align-items-center">
+                            <lottie-player src="https://assets7.lottiefiles.com/private_files/lf30_i00xwl9q.json"
+                                speed="1" loop autoplay>
+                            </lottie-player>
+                        </div>
+                        <div class="text-center">
+                            <h1>Console Stack</h1>
+                            <p class="paragraf-1 mt-3">
+                                Tiap mesin memiliki SmartConsole
+                            </p>
+                            <a onclick="modalTriger('modal-stack')"
+                                class="btn-choose-card text-button text-white my-auto ms-auto">
+                                Gunakan Jenis Ini
+                                <img src="../asset/img/arrow-r.svg" class="ms-3">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="card-choose-slide mx-auto mb-3">
+                        <div class="wrapper-animasi d-flex align-items-center">
+                            <lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_c8oppoww.json"
+                                speed="1" loop autoplay>
+                            </lottie-player>
+                        </div>
+                        <div class="d-flex align-items-end">
+                            <div class="text-center">
+                                <h1>Console Device</h1>
+                                <p class="paragraf-1 mt-3">
+                                    Tiap mesin memiliki SmartConsole
+                                </p>
+                                <a onclick="modalTriger('modal-device')"
+                                    class="btn-choose-card text-button text-white my-auto ms-auto">
+                                    Gunakan Jenis Ini
+                                    <img src="../asset/img/arrow-r.svg" class="ms-3">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="card-choose-slide mx-auto mb-3">
+                        <div class="wrapper-animasi d-flex align-items-center">
+                            <lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_odusdjc0.json"
+                                speed="1" loop autoplay>
+                            </lottie-player>
+                        </div>
+                        <div class="d-flex align-items-end">
+                            <div class="text-center">
+                                <h1>Console Group</h1>
+                                <p class="paragraf-1 mt-3">
+                                    Tiap mesin memiliki SmartConsole
+                                </p>
+                                <a class="btn-choose-card-disable text-button text-white my-auto ms-auto">
+                                    Hanya Untuk Tablet
+                                    <img src="../asset/img/arrow-r.svg" class="ms-3">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <span class="gedung-bg"></span>
+
+    <!-- ! Modal Stack -->
+    <div id="overlay" style="visibility: visible !important;"></div>
+    <div class="modal" id="modal-stack" style="visibility: visible;">
+        <div class="p-3">
+            <h1 class="text-center">Console Stack</h1>
+            <p class="paragraf-1 text-center my-2">
+                Gabungkan <span class="font-bold">Washer & Dryer</span> menjadi 1 SmartConsole
+            </p>
+            <p class="sub-head-1 mt-4">Mesin di console ini </p>
+            <div class="modal-content">
+                <div class="card-mesin">
+                    <div>
+                        <h2>Washer 1</h2>
+                        <p class="sub-head-1 my-1">Washer</p>
+                        <p class="sub-head-2 my-1">
+                            SN12333423221
+                        </p>
+                    </div>
+                    <div class="d-flex">
+                        <p class="text-button me-3">Ganti</p>
+                        <img src="../asset/img/arrow-r-gray.svg">
+                    </div>
+                </div>
+                <div class="card-mesin">
+                    <div>
+                        <h2>Dryer 1</h2>
+                        <p class="sub-head-1 my-1">Mesin Pengering</p>
+                        <p class="sub-head-2 my-1">
+                            SN12333423221
+                        </p>
+                    </div>
+                    <div class="d-flex">
+                        <p class="text-button me-3">Ganti</p>
+                        <img src="../asset/img/arrow-r-gray.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="card-tips mx-auto">
+                <div class="d-flex flex-row">
+                    <div class="ribbon text-white">
+                        Cara dapat QR Mesin
+                    </div>
+                    <img src="../asset/img/ribbon.svg" style="height: 38px;">
+                </div>
+                <div class="caption px-3 my-2">
+                    Buka SmartOwner >
+                    Menu <span class="font-bold">Outlet & Workshop</span> >
+                    Pilih Outlet >
+                    Daftar Mesin Snapbridge >
+                    Info QRIS
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between mt-5">
+            <a class="btn-kembali-setup">
+                <img class="me-3" src="../asset/img/arrow-l-gray.svg">
+                Kembali
+            </a>
+            <a href="../pin.html" class="btn-selesai-setup bg-primary">
                 Selesai
                 <img class="ms-3" src="../asset/img/arrow-r.svg">
             </a>
         </div>
     </div>
-    </div>
+    <!-- !End Modal Stack -->
+
+    <script src="../asset/js/script.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('.splide', {
+                arrows: false
+            }).mount();
+        });
+    </script>
 </body>
 
 </html>
