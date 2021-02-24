@@ -351,15 +351,12 @@ lottie-player {
 }
 
 .card-waktu-selesai {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  position: absolute !important;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 8px 16px;
-  background-color: var(--white);
   position: static;
-  width: 80%;
-  height: 83px;
 }
 /* 
 .setup-qr-tips {
@@ -445,16 +442,18 @@ lottie-player {
 
 .content-mulai {
   position: relative;
-  z-index: 2;
   padding: 16px;
   height: 100%;
 }
 
-.anu {
+.lottie-putar-biru {
   height: 192px;
   width: 192px;
   border-radius: 100%;
-  background-color: var(--white);
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 20%);
 }
 
 .footer-card-mulai {
