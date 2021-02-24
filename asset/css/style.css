@@ -55,6 +55,10 @@ lottie-player {
   margin-right: auto;
 }
 
+.lottie-cek-manual {
+  margin: -50px 0 -40px 0;
+}
+
 .splide-layanan {
   margin-top: -80px;
   height: 470px;
@@ -388,9 +392,15 @@ lottie-player {
 .content-mulai {
   position: relative;
   z-index: 2;
-  background-color: #f4f4f4;
   padding: 16px;
   height: 100%;
+}
+
+.anu {
+  height: 192px;
+  width: 192px;
+  border-radius: 100%;
+  background-color: var(--white);
 }
 
 .footer-card-mulai {
@@ -438,6 +448,15 @@ lottie-player {
   padding: 16px;
   background: #eb5757;
   box-shadow: inset 0px 4px 10px rgba(186, 28, 28, 0.25);
+}
+
+.card-qr-bayar {
+  padding: 16px;
+  margin: 25% auto 27px auto;
+  width: 80%;
+  background: #ffffff;
+  box-shadow: 0px 8px 20px rgba(33, 109, 255, 0.15);
+  border-radius: 8px;
 }
 
 .content-setup-selesai {
@@ -495,7 +514,7 @@ lottie-player {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 120%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: block;
