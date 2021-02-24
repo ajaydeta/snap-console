@@ -595,10 +595,6 @@ lottie-player {
   margin: 0 !important;
 }
 
-.modal-content {
-  height: 250px;
-}
-
 .modal-bottom {
   position: absolute;
   background-color: var(--white);
@@ -797,4 +793,23 @@ lottie-player {
   width: 100% !important;
   height: 100% !important;
   position: absolute;
+}
+
+.input-code-mesin {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.input-code-mesin > .p-3 > input {
+  border: 1px solid #e0e0e0;
+  width: 80%;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.input-code-mesin > input:focus {
+  border-color: var(--primary);
 }
