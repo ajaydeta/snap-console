@@ -38,6 +38,20 @@ lottie-player {
   box-shadow: 0px 4px 10px rgba(17, 17, 17, 0.1);
 }
 
+.top-bar-cek {
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 16px;
+  height: 56px;
+  width: 91%;
+  background: var(--white);
+  box-shadow: 0px 4px 10px rgba(17, 17, 17, 0.1);
+}
+
 .lottie-bg {
   margin-top: -3px;
   margin-bottom: -35px;
@@ -218,6 +232,46 @@ lottie-player {
   color: var(--primary);
   background: var(--white);
   border: 3px solid var(--primary);
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btn-outline-gray {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 16px;
+
+  position: static;
+  height: 52px;
+  left: 0px;
+  top: 72px;
+
+  /* Primary/1 */
+  color: var(--gray2);
+  background: var(--white);
+  border: 1.5px solid #e0e0e0;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btn-outline-red {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 16px;
+
+  position: static;
+  height: 52px;
+  left: 0px;
+  top: 72px;
+
+  /* Primary/1 */
+  color: var(--red);
+  background: var(--white);
+  border: 1.5px solid var(--red);
   border-radius: 4px;
   text-decoration: none;
 }
