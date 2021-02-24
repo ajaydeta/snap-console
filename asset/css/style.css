@@ -567,7 +567,7 @@ lottie-player {
   position: absolute;
   top: 0;
   left: 0;
-  height: 120%;
+  height: 110%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: block;
@@ -781,4 +781,20 @@ lottie-player {
 
 .active {
   opacity: 80%;
+}
+
+.wrapper-text {
+  position: absolute;
+  z-index: 5;
+  text-align: center !important;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+}
+
+.bg-mulai {
+  background-color: var(--gray5) !important;
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
 }
