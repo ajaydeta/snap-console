@@ -156,7 +156,7 @@ lottie-player {
   height: 300px !important;
 }
 
-.btn-primary {
+.button-primary {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,7 +174,7 @@ lottie-player {
   text-decoration: none;
 }
 
-.btn-choose-card {
+.button-choose-card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -193,7 +193,7 @@ lottie-player {
   border-radius: 8px 0 0 8px;
 }
 
-.btn-choose-card-disable {
+.button-choose-card-disable {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -212,11 +212,11 @@ lottie-player {
   border-radius: 8px 0 0 8px;
 }
 
-.btn-choose-card-disable:hover {
+.button-choose-card-disable:hover {
   background-color: var(--red);
 }
 
-.btn-outline-primary {
+.button-outline-primary {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -236,7 +236,7 @@ lottie-player {
   text-decoration: none;
 }
 
-.btn-outline-gray {
+.button-outline-gray {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -256,7 +256,7 @@ lottie-player {
   text-decoration: none;
 }
 
-.btn-outline-red {
+.button-outline-red {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -276,7 +276,7 @@ lottie-player {
   text-decoration: none;
 }
 
-.btn-selesai-setup {
+.button-selesai-setup {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -289,7 +289,7 @@ lottie-player {
   border-radius: 8px 0 0 8px;
 }
 
-.btn-kembali-setup {
+.button-kembali-setup {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -302,7 +302,7 @@ lottie-player {
   border-radius: 0 8px 8px 0;
 }
 
-.btn-pill-white {
+.button-pill-white {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -315,7 +315,7 @@ lottie-player {
   color: #4f4f4f;
 }
 
-.btn-pill-primary {
+.button-pill-primary {
   display: flex;
   flex-direction: row;
   justify-content: center;
